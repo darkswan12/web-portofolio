@@ -6,31 +6,23 @@ body {
   }
   
   .container {
-    max-width: 900px;
+    max-width: 960px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
   
   header {
-    text-align: center;
     margin-bottom: 40px;
+    text-align: center;
   }
   
-  header h1 {
-    font-size: 36px;
-    color: #2c3e50;
-  }
-  
-  header p {
-    font-size: 18px;
-    color: #7f8c8d;
-  }
-
   .header-content {
     display: flex;
     align-items: center;
-    text-align: left;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    text-align: left;
   }
   
   .profile-pic {
@@ -38,35 +30,57 @@ body {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  header p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin: 0;
   }
   
   h2 {
     color: #2980b9;
     border-bottom: 2px solid #ecf0f1;
     padding-bottom: 5px;
-  }
-  
-  a {
-    color: #16a085;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
+    margin-top: 40px;
   }
   
   .card {
     background: #ffffff;
     border-left: 5px solid #3498db;
     padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  a {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
   
   .skills {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     list-style: none;
     padding: 0;
   }
@@ -74,9 +88,18 @@ body {
   .skills li {
     background: #ecf0f1;
     color: #2c3e50;
-    margin: 5px;
-    padding: 10px 15px;
+    padding: 8px 14px;
     border-radius: 20px;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .skills li:hover {
+    background: #d0d7de;
+  }
+  
+  ul {
+    padding-left: 20px;
   }
   
   footer {
@@ -84,4 +107,27 @@ body {
     text-align: center;
     font-size: 14px;
     color: #aaa;
+    padding: 20px 0;
   }
+  
+  /* RESPONSIF */
+  @media screen and (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      margin-bottom: 10px;
+    }
+  
+    header h1 {
+      font-size: 26px;
+    }
+  
+    .skills li {
+      font-size: 13px;
+      padding: 7px 12px;
+    }
+  }
+  
