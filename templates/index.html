@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Darmawan Suhara - Portofolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="header-content">
+          <img src="{{ url_for('static', filename='profile.png') }}" alt="Foto Darmawan" class="profile-pic">
+          <div>
+            <h1>Darmawan Suhara</h1>
+            <p>Machine Learning, UI/UX & Mobile Development Enthusiast</p>
+          </div>
+        </div>
+      </header>
+
+    <section class="info">
+      <h2>Kontak</h2>
+      <ul>
+        <li>Email: <a href="mailto:darmawnshr@gmail.com">darmawnshr@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/darmawan-suhara-a9426422b" target="_blank">linkedin.com/in/darmawan</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Proyek Unggulan</h2>
+      <div class="card">
+        <h3>📸 Klasifikasi Batik dengan CNN</h3>
+        <p>Menggunakan TensorFlow dan Streamlit untuk membuat aplikasi klasifikasi batik berbasis web.</p>
+        <a href="https://klasifikasi-batik-darmawan.streamlit.app" target="_blank">
+            Klik di sini untuk melihat demo
+        </a>
+      </div>
+      <div class="card">
+        <h3>📊 Visualisasi Data Kelayakan Pendidikan Indonesia</h3>
+        <p>Proyek ini bertujuan untuk menganalisis dan memvisualisasikan data kelayakan pendidikan di Indonesia guna memperoleh wawasan tentang kualitas pendidikan berdasarkan berbagai indikator.</p>
+        <a href="{{ url_for('static', filename='Visualisasi_Data_Kelayakan_Pendidikan_Indonesia.pdf') }}" target="_blank">
+          Lihat dokumen proyek (PDF)
+        </a>
+      </div>
+      <div class="card">
+        <h3>📈 Interpolasi Quadratic & Cubic Spline</h3>
+        <p>Proyek ini membandingkan dua metode interpolasi—Quadratic dan Cubic Spline—untuk menganalisis hubungan antara kedalaman gempa dan magnitudo menggunakan data seismik. Visualisasi dilakukan menggunakan Python dan Matplotlib.</p>
+        <a href="{{ url_for('static', filename='Interpolasi_Quadratic_dan_Cubic_Spline.pdf') }}" target="_blank">
+          Lihat dokumen proyek (PDF)
+        </a>
+      </div>
+      <div class="card">
+        <h3>🎨 Desain UI/UX - Sisfo Fest</h3>
+        <p>Desain UI/UX untuk event Sistem Informasi Festival. Dibuat dengan Figma sebagai bagian dari showcase kemampuan desain interaktif dan estetika antarmuka pengguna.</p>
+        <a href="https://www.figma.com/design/tA5VxiQPbUXL0lTJbgIqyq/Sisfo-Fest-UI-UX?node-id=71-2645&t=kPo9zyz5BLoz0d61-1" target="_blank">
+          Lihat Desain di Figma
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kemampuan</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>TensorFlow</li>
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Streamlit</li>
+        <li>Flask</li>
+        <li>Data Visualization</li>
+        <li>Deep Learning</li>
+        <li>Scientific Computing (SciPy)</li>
+        <li>Computer Vision</li>
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>UI/UX Design (Figma)</li>
+        <li>Kotlin</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pengalaman</h2>
+      <ul>
+        <li>💻 Bangkit Academy 2024 - Mobile Dev</li>
+        <li>🌐 BPBD Cianjur - Junior Web Developer</li>
+        <li>🎓 HIMTI Gunadarma - Wakil Kepala Divisi Penelitian dan Pengembangan</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+      <p>S1 Informatika, Universitas Gunadarma (2021 - 2025)</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Darmawan Suhara. Created with Flask & Love.</p>
+    </footer>
+  </div>
+</body>
+</html>
