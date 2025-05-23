@@ -131,3 +131,84 @@ body {
     }
   }
   
+  .print-contacts {
+    display: none;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ecf0f1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  .icon.email { background-color: #f39c12; }
+  .icon.linkedin { background-color: #0077b5; }
+  .icon.github { background-color: #333; }
+
+  @media print {
+    .card a {
+      display: none !important;
+    }
+    .social-icons {
+      display: none !important;
+    }
+
+    .print-contacts {
+      display: block !important;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .print-contacts p {
+      margin: 5px 0;
+    }
+
+    .download-btn {
+      display: none !important;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .download-btn {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .download-btn:hover {
+    background-color: #1c5980;
+    transform: translateY(-2px);
+  }
+  

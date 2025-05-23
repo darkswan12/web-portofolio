@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Darmawan Suhara - Portofolio</title>
-        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darmawan Suhara - Portofolio</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
 <body>
   <div class="container">
     <header>
-        <div class="header-content">
-          <img src="{{ url_for('static', filename='favicon.png') }}" alt="Foto Darmawan" class="profile-pic">
-          <div>
-            <h1>Darmawan Suhara</h1>
-            <p>Machine Learning, UI/UX & Mobile Development Enthusiast</p>
-          </div>
+      <div class="header-content">
+        <img src="{{ url_for('static', filename='favicon.png') }}" alt="Foto Darmawan" class="profile-pic" />
+        <div>
+          <h1>Darmawan Suhara</h1>
+          <p>Machine Learning, UI/UX & Mobile Development Enthusiast</p>
         </div>
-      </header>
+      </div>
+    </header>
 
-    <section class="info">
-      <h2>Kontak</h2>
-      <ul>
-        <li>Email: <a href="mailto:darmawnshr@gmail.com">darmawnshr@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/darmawan-suhara-a9426422b" target="_blank">linkedin.com/in/darmawan</a></li>
-      </ul>
+    <section class="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah Darmawan Suhara, mahasiswa S1 Informatika Universitas Gunadarma yang saat ini menempuh semester 8.
+        Saya terbiasa bekerja dalam tekanan, baik secara individu maupun dalam tim, serta cepat dalam mempelajari hal baru.
+      </p>
     </section>
 
     <section>
@@ -33,37 +35,27 @@
       <div class="card">
         <h3>📸 Klasifikasi Batik dengan CNN</h3>
         <p>Menggunakan TensorFlow dan Streamlit untuk membuat aplikasi klasifikasi batik berbasis web.</p>
-        <a href="https://klasifikasi-batik-darmawan.streamlit.app" target="_blank">
-            Klik di sini untuk melihat demo
-        </a>
+        <a href="https://klasifikasi-batik-darmawan.streamlit.app" target="_blank">Klik di sini untuk melihat demo</a>
       </div>
       <div class="card">
         <h3>📊 Visualisasi Data Kelayakan Pendidikan Indonesia</h3>
         <p>Proyek ini bertujuan untuk menganalisis dan memvisualisasikan data kelayakan pendidikan di Indonesia guna memperoleh wawasan tentang kualitas pendidikan berdasarkan berbagai indikator.</p>
-        <a href="{{ url_for('static', filename='Visualisasi_Data_Kelayakan_Pendidikan_Indonesia.pdf') }}" target="_blank">
-          Lihat dokumen proyek (PDF)
-        </a>
+        <a href="{{ url_for('static', filename='Visualisasi_Data_Kelayakan_Pendidikan_Indonesia.pdf') }}" target="_blank">Lihat dokumen proyek (PDF)</a>
       </div>
       <div class="card">
         <h3>📈 Interpolasi Quadratic & Cubic Spline</h3>
         <p>Proyek ini membandingkan dua metode interpolasi—Quadratic dan Cubic Spline—untuk menganalisis hubungan antara kedalaman gempa dan magnitudo menggunakan data seismik. Visualisasi dilakukan menggunakan Python dan Matplotlib.</p>
-        <a href="{{ url_for('static', filename='Interpolasi_Quadratic_dan_Cubic_Spline.pdf') }}" target="_blank">
-          Lihat dokumen proyek (PDF)
-        </a>
+        <a href="{{ url_for('static', filename='Interpolasi_Quadratic_dan_Cubic_Spline.pdf') }}" target="_blank">Lihat dokumen proyek (PDF)</a>
       </div>
       <div class="card">
         <h3>📚 Metabook Indonesia - Aplikasi Rekomendasi Buku</h3>
-        <p>Aplikasi Android yang dibangun dengan Kotlin untuk merekomendasikan buku bacaan berdasarkan kategori dan minat pengguna. Proyek ini menampilkan implementasi RecyclerView, ViewModel, serta konsumsi API untuk pengalaman pengguna yang interaktif dan responsif. Aplikasi ini dibuat bersama dalam 1 tim untuk Tugas Akhir Bangkit 2024.</p>
-        <a href="https://github.com/darkswan12/Metabook-Indonesia" target="_blank">
-            Lihat Kode Sumber di GitHub
-      </a>
-    </div>
+        <p>Aplikasi Android yang dibangun dengan Kotlin untuk merekomendasikan buku bacaan berdasarkan kategori dan minat pengguna. Proyek ini dibuat bersama dalam 1 tim untuk Tugas Akhir Bangkit 2024.</p>
+        <a href="https://github.com/darkswan12/Metabook-Indonesia" target="_blank">Lihat Kode Sumber di GitHub</a>
+      </div>
       <div class="card">
         <h3>🎨 Desain UI/UX - Sisfo Fest</h3>
         <p>Desain UI/UX untuk event Sistem Informasi Festival. Dibuat dengan Figma sebagai bagian dari showcase kemampuan desain interaktif dan estetika antarmuka pengguna.</p>
-        <a href="https://www.figma.com/design/tA5VxiQPbUXL0lTJbgIqyq/Sisfo-Fest-UI-UX?node-id=71-2645&t=kPo9zyz5BLoz0d61-1" target="_blank">
-          Lihat Desain di Figma
-        </a>
+        <a href="https://www.figma.com/design/tA5VxiQPbUXL0lTJbgIqyq/Sisfo-Fest-UI-UX?node-id=71-2645&t=kPo9zyz5BLoz0d61-1" target="_blank">Lihat Desain di Figma</a>
       </div>
     </section>
 
@@ -100,6 +92,26 @@
       <h2>Pendidikan</h2>
       <p>S1 Informatika, Universitas Gunadarma (2021 - 2025)</p>
     </section>
+    
+    <section class="info">
+      <h2 style="text-align: center;">Kontak</h2>
+      <div class="social-icons">
+        <a href="mailto:darmawnshr@gmail.com" class="icon email" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/darmawan-suhara-a9426422b" class="icon linkedin" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/darkswan12" class="icon github" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="print-contacts">
+        <p>Email: darmawnshr@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/darmawan-suhara-a9426422b</p>
+        <p>GitHub: github.com/darkswan12</p>
+      </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <button onclick="window.print()" class="download-btn">
+        Cetak / Simpan sebagai PDF
+      </button>
+    </div>
 
     <footer>
       <p>© 2025 Darmawan Suhara. Created with Flask & Love.</p>
