@@ -1,7 +1,7 @@
 # 💼 Darmawan Suhara - Portofolio Pribadi
 
 Selamat datang di repositori **Portofolio Web Darmawan Suhara**!  
-Website ini dibuat menggunakan **Flask** dan **HTML/CSS**, menampilkan berbagai proyek unggulan, keterampilan teknis, serta pengalaman saya di bidang **Machine Learning, UI/UX, dan Mobile Development**.
+Website ini dibuat menggunakan **Flask** dan **HTML,CSS&Javascript**, menampilkan berbagai proyek unggulan, keterampilan teknis, serta pengalaman saya di bidang **Machine Learning, UI/UX, dan Mobile Development**.
 
 ---
 
