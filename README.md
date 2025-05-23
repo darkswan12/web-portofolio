@@ -17,6 +17,7 @@ _Machine Learning, UI/UX & Mobile Development Enthusiast_
 
 - 📧 Email: [darmawnshr@gmail.com](mailto:darmawnshr@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/darmawan-suhara-a9426422b](https://linkedin.com/in/darmawan-suhara-a9426422b)
+- 🐙 GitHub: [github.com/darkswan12](https://github.com/darkswan12)
 
 ---
 
@@ -58,9 +59,9 @@ Desain antarmuka untuk event Sistem Informasi Festival menggunakan Figma.
 - Python, TensorFlow, NumPy, Pandas, SciPy  
 - Deep Learning & Computer Vision  
 - Streamlit, Flask  
-- Web Development (HTML, CSS, JS)  
+- Web Development (HTML, CSS, JavaScript)  
 - UI/UX Design (Figma)  
-- Kotlin (Android Dev)  
+- Kotlin (Android Development)  
 - Git & GitHub  
 
 ---
@@ -79,27 +80,51 @@ Desain antarmuka untuk event Sistem Informasi Festival menggunakan Figma.
 
 ---
 
-## 🛠 Teknologi yang Digunakan
+## 🖼 Desain & Tampilan
 
-- **Python**
-- **Flask**
-- **HTML & CSS**
-- **Jinja2**
-- **Responsive Design**
+Website ini menggunakan:
+
+- **Google Fonts (Poppins)** untuk tipografi yang modern dan bersih.  
+- **FontAwesome 6.5.0** untuk ikon sosial media dan elemen UI.  
+- Desain responsif agar dapat diakses dengan nyaman di desktop maupun perangkat mobile.
 
 ---
 
-## 🌐 Link Deploy  
+## 📄 Fitur Tambahan
+
+- Terdapat tombol **Cetak / Simpan sebagai PDF** pada halaman portofolio untuk memudahkan pengunjung menyimpan informasi portofolio dalam format PDF secara langsung dari browser.
+
+---
+
+## 🗂 Struktur Proyek
+
+- `templates/index.html` — halaman utama portofolio dengan template Flask (menggunakan Jinja2).  
+- `static/` — berisi aset statis seperti gambar profil, stylesheet CSS, dan dokumen PDF proyek.  
+- Dokumen PDF dapat diakses langsung melalui link di portofolio dan juga tersedia di folder `static`.
+
+---
+
+## ⚙️ Teknologi dan Framework
+
+- Backend menggunakan **Flask** dengan template engine **Jinja2**.  
+- Frontend menggunakan **HTML5**, **CSS3**, dan integrasi font & ikon dari CDN.
+
+---
+
+## 🌐 Link Deploy
+
 Anda dapat mengunjungi website portofolio ini secara langsung di:  
 👉 [https://darkswan12.pythonanywhere.com/](https://darkswan12.pythonanywhere.com/)
 
 ---
 
-## 🔗 Repositori GitHub  
+## 🔗 Repositori GitHub
+
 Kode sumber dari proyek ini dapat Anda temukan di repositori GitHub berikut:  
 👉 [https://github.com/darkswan12/web-portofolio](https://github.com/darkswan12/web-portofolio)
 
 ---
+
 ## ⚙️ Cara Menjalankan Proyek
 
 ```bash
@@ -107,4 +132,3 @@ git clone https://github.com/darkswan12/web-portofolio.git
 cd web-portofolio
 pip install flask
 python app.py
-
