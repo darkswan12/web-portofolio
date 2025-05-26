@@ -124,11 +124,3 @@ Kode sumber dari proyek ini dapat Anda temukan di repositori GitHub berikut:
 👉 [https://github.com/darkswan12/web-portofolio](https://github.com/darkswan12/web-portofolio)
 
 ---
-
-## ⚙️ Cara Menjalankan Proyek
-
-```bash
-git clone https://github.com/darkswan12/web-portofolio.git
-cd web-portofolio
-pip install flask
-python app.py
